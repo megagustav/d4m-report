@@ -1,0 +1,86 @@
+\usepackage{hyperref}
+
+%\usepackage{etoolbox}
+%\makeatletter
+%\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+%\makeatother
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\graphicspath{ {links/} }
+
+\usepackage{titlesec}
+\usepackage{fontspec}
+
+\setmainfont[ Path = fonts/]{Equity Text B Regular.otf}[
+BoldFont = Equity Text B Bold.otf ,
+ItalicFont = Equity Text B Italic.otf ,
+BoldItalicFont = Equity Text B Bold Italic.otf ]
+
+%\setsansfont{[Concourse T4 Regular.ttf]} 
+%\setmonofont{Courier}
+
+\usepackage{csquotes}
+\usepackage{xcolor}
+
+\hypersetup{%
+  colorlinks=true,% hyperlinks
+  linkcolor=Mahogany,% hyperlink text
+  linkbordercolor=Mahogany,% hyperlink border
+  citecolor=Mahogany,        % color of links to bibliography
+  filecolor=Mahogany,      % color of file links
+  urlcolor=Mahogany           % color of external links
+}
+
+\usepackage{listings}
+\usepackage[abbreviations,british]{foreign}
+
+\usepackage[margin=1em, labelsep=colon, font={small, color=gray}]{caption}
+% \usepackage{biblatex}
+% \usepackage[backend=biber,style=alphabetic]{biblatex}
+\usepackage[a4paper]{geometry}
+\geometry{top=2cm, bottom=2cm, left=2.6cm, right=2.6cm}
+
+\usepackage{xcolor}
+\definecolor{cchapter}{cmyk}{0,0.8,1,0.25}
+\definecolor{csection}{cmyk}{0,0.8,0.9,0.4}
+\definecolor{csubsection}{cmyk}{0,0.4,0.4,0.65}
+
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\color{cchapter}}
+  {\chaptertitlename\ \thechapter}{-1em}{\LARGE}[{\titlerule[0.8pt]}]
+\titleformat{\section}
+  {\normalfont\color{csection}}
+  {\thesection}{1.3em}{}%[{\titlerule[0.8pt]}]
+\titleformat{\subsection}
+  {\normalfont\color{csubsection}}
+  {\thesubsection}{1.15em}{}
+
+\titlespacing*{\chapter}{0pt}{-50pt}{1em}
+\titlespacing*{\section}{0pt}{1.6em}{0.3em}
+\titlespacing*{\subsection}{0pt}{1.6em}{-0.6em}
+
+\parskip=1em % adds vertical space between paragraphs
+
+%\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,factor=1100,stretch=10,shrink=10]{microtype}
+
+% greatly improved citation commands:    
+% \usepackage[longnamesfirst]{natbib}
+
+% better looking tables with `\toprule`,`\midrule`,`\bottomrule`:
+\usepackage{booktabs}
+
+% make sure figures do not appear before their text:    
+\usepackage{flafter}   
+
+% if you're doing math:    
+% \usepackage{amsmath,amssymb,cancel,units}
+
+% more control with verbatim ('unformated') environments:  
+\usepackage{fancyvrb}
+
+%\newcommand{\ie}{i.e.}
+%\newcommand{\eg}{e.g.}

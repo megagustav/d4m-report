@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.29)  30 NOV 2020 14:17
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.29)  30 NOV 2020 14:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -712,32 +712,47 @@ Chapter 5.
 File: links/fig12.png Graphic file (type bmp)
 <links/fig12.png>
 
-Overfull \hbox (43.1842pt too wide) in paragraph at lines 625--627
+Overfull \hbox (43.1842pt too wide) in paragraph at lines 606--608
 []|  [] 
  []
 
 [25
 
-] (/Users/house/Git/d4m-report/.texpadtmp/d4m.bbl [26] [27
+]
+File: links/fig13.jpg Graphic file (type bmp)
+<links/fig13.jpg>
+File: links/fig14.jpg Graphic file (type bmp)
+<links/fig14.jpg>
+File: links/fig15.jpg Graphic file (type bmp)
+<links/fig15.jpg>
+ [26] [27]
+File: links/fig16.png Graphic file (type bmp)
+<links/fig16.png>
+
+Overfull \hbox (43.1842pt too wide) in paragraph at lines 700--702
+[]|  [] 
+ []
+
+(/Users/house/Git/d4m-report/.texpadtmp/d4m.bbl [28] [29] [30
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 684.
- [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 684.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 732.
+ [31]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 732.
  (/Users/house/Git/d4m-report/.texpadtmp/d4m.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 684.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 684.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 732.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 732.
 Package rerunfilecheck Info: File `d4m.out' has not changed.
 (rerunfilecheck)             Checksum: C8DC1232D84C18863C42542AB6F0F750;2204.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 684.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 732.
  ) 
 Here is how much of TeX's memory you used:
- 16324 strings out of 479418
- 299521 string characters out of 5884584
- 636811 words of memory out of 5000000
- 33603 multiletter control sequences out of 15000+600000
+ 16353 strings out of 479418
+ 299944 string characters out of 5884584
+ 637116 words of memory out of 5000000
+ 33627 multiletter control sequences out of 15000+600000
  540743 words of font info for 63 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  47i,6n,72p,944b,710s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/house/Git/d4m-report/.texpadtmp/d4m.pdf (29 pages).
+Output written on /Users/house/Git/d4m-report/.texpadtmp/d4m.pdf (32 pages).

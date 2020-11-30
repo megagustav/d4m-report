@@ -3,8 +3,18 @@
 
 
 \title {A Taxonomy for Design for Meaning}
-\author {Ajovalasit, M., Giacomin, J., Moorhouse, G.}
-\date{November 2020}
+%\author {Ajovalasit, M., Giacomin, J., Moorhouse, G.}
+\date{November 2020
+
+to be submitted for publication}
+% To be submitted for publication in the International Journal of Design
+
+\author[1]{Marco Ajovalasit}
+\affil[1]{Department of Design, Politecnico di Milano}
+\author[2]{Joseph Giacomin}
+\affil[2]{Human Centred Design, Brunel University}
+\author[3]{Gustav Moorhouse}
+\affil[3]{Department of Design, Politecnico di Milano}
 
 \begin{document}
 
@@ -149,7 +159,7 @@ It will at first be used to train our model with a given algorithm and later we 
 
 %===================================
 
-\chapter{Natural Language Processing (NLP)}
+\chapter{Phase 1: Natural Language Processing (NLP)}
 
 NLP focuses on expressing language in a way that is intelligible to machines.
 It combines the power of linguistics and computer science to study the rules and structures of language, and create intelligent systems capable of understanding, analysing, and extracting meaning from text and speech (MonkeyLearn, 2019)\cite{monkeylearn2019}.
@@ -277,7 +287,7 @@ Other basic features of libraries include tokenisation, where each word and symb
 From Figure \ref{fig:table4} above, SpaCy can be identified as the most promising candidate.
 It has most of the features and although it’s relatively new and not as established as NLTK, it has a comprehensive documentation along with tutorials that we can follow along to learn the tool.
 From our research, it seems like a favourite among new NLP projects for its speed and ease of use.
-The makers of SpaCy, Explosion, also have a text classification and training tool called Prodigy that can be used for text classification.
+The makers of SpaCy, \href{https://explosion.ai}{Explosion}, also have a text classification and training tool called Prodigy that can be used for text classification.
 Text classification can help us identify senses of our focus words in a corpus.
 
 In theory, once the model is sufficiently trained we can test results from different corpora and find related words based on context, from formal to informal.
@@ -300,17 +310,17 @@ Other examples such as ConceptNet or Facebook’s FastText required a small amou
 
 \subsection{ConceptNet}
 
-ConceptNet is a freely-available semantic network to find related words in its ontological multi-lingual database from Open Mind Common Sense, Wikipedia, WordNet, etc and was developed by Speer et al.\ (2017).
+ConceptNet is a freely-available semantic network to find related words in its ontological multi-lingual database from Open Mind Common Sense, Wikipedia, WordNet, etc and was developed by Speer et al.\ (2018) \cite{speer2018}.
 When searching for a word, the results are displayed in classes --- synonyms, related terms, types of, derived terms, ways of, things used for, context of, word forms, etymological relatives, antonyms and more.
 The tool understands different levels of dependency, can detect if a word has an effect on another word and what the use of the word is.
 Depending on the input word, the quality of these dependencies and related words varies widely.
-Figure 2 is a screenshot from ConceptNet website, comparing results for x is capable of illustrating the differences when looking up regular words versus rare words.
+Figure \ref{fig:figure2} is a screenshot from ConceptNet website, comparing results for x is capable of illustrating the differences when looking up regular words versus rare words.
 With decreased frequency of use the models have a hard time understanding the relationships the word has on others.
 The results from ConceptNet’s website are output in all languages it can find related words for.
 This overcrowds the results.
 ConceptNet have a clearly-written API on GitHub with examples of related word queries filtered to English and including or excluding certain parameters.
 The given parameters for a word can be viewed in the API.
-The complete semantic network for myth can be viewed at api.conceptnet.io/c/en/myth.
+The complete semantic network for myth can be viewed at \url{api.conceptnet.io/c/en/myth}.
 This pattern matches for all word queries.
 
 \vspace*{0.2em}
@@ -324,9 +334,9 @@ This pattern matches for all word queries.
 
 We wrote a script that gets the related words of our input term, removes the derived terms and forms of the word, and outputs the results in a table.
 The API calls in our script are humanly-readable and go as followed:
-First, we get the related words using \lstinline{http://api.conceptnet.io/related/c/en/alpha}, where alpha is our input word.
-Then we call derived terms \lstinline{http://api.conceptnet.io/query?node=/c/en/alpha\&rel=/r/DerivedFrom} and forms of \lstinline{http://api.conceptnet.io/query?node=/c/en/alpha&rel=/r/FormOf} and subtract both from the related words list.
-The difference is output into a table which we copied into Table 5 in section 4.3 on page 17.
+First, we get the related words using \bverb{http://api.conceptnet.io/related/c/en/alpha}, where alpha is our input word.
+Then we call derived terms \bverb{http://api.conceptnet.io/query?node=/c/en/alpha\&rel=/r/DerivedFrom} and forms of \bverb{http://api.conceptnet.io/query?node=/c/en/alpha\&rel=/r/FormOf} and subtract both from the related words list.
+The difference is output into a table which we copied into Table \ref{fig:table5}.
 We also attached weighting to the related terms, the meaning of the weighting however is not qualifiable, nor is a low weighting an indicator for uninteresting words.
 We wrote the script to have flexibility over the number of output words and compared the results with 10, 20 and 50 output words per term.
 The results were poor with 10 results and we did not gain further insight looking at 50 results.
@@ -346,7 +356,7 @@ First to create a tool with automatic syntactic analyses, second a complete clas
 \vspace*{1.2em}
 
 Their demo allows for the selection of different models and next to searching
-for nearby words also offers the possibility to view the numeric similarity of two words and to compute a word analogy akin to word2vec's example king - man + woman $\approx$ queen (Mikolov et al., 2013) \cite{mikolov2013}.
+for nearby words also offers the possibility to view the numeric similarity of two words and to compute a word analogy akin to word2vec's example \bverb{king - man + woman $\approx$ queen} (Mikolov et al., 2013) \cite{mikolov2013}.
 
 We did not use the comparison or analogy features and instead focused on getting 10 related words for a single input word and repeated the process for each of our three focus words.
 The results were copied into Figure \ref{fig:table5}).
@@ -376,8 +386,8 @@ To use FastText, we had to include it in a Gensim wrapper as it doesn’t have a
 GloVe is an algorithm by Stanford’s NLP department that also uses vectors trained on Wikipedia and Common Crawl, with 400.000 and 1.900.000 words respectively in its vocabulary.
 
 Gemsim can be installed and ran in a Python script using import gensim.
-We then loaded the the pre-trained FastText vectors from Wikipedia and later GloVe into Gensim with the command gensim.models.KeyedVectors. load\_word2vec\_format(‘vectors.vec’).
-Then we output the 10 most similar results for our focus words using most\_similar(‘word’, topn=10).
+We then loaded the the pre-trained FastText vectors from Wikipedia and later GloVe into Gensim with the command \bverb{gensim.models.KeyedVectors load\_word2vec\_format(‘vectors.vec’)}.
+Then we output the 10 most similar results for our focus words using \bverb{most\_similar(‘word’, topn=10)}.
 
 \subsection{SpaCy + Reddit}
 
@@ -471,7 +481,7 @@ SpaCy’s stand-alone training tool Prodigy was the focus of our NLP research as
 The tool allows us to create a new word category and train a model to recognise words that belong in that category.
 To use the word2vec and sense2vec models from SpaCy, we first had to install their tools into a virtual python environment, the details of which process can be read in our blog post about debugging the Prodigy installation.
 
-Once we were set up, we could use the command prodigy terms.teach function\_pattern en\_core\_web\_lg --seeds function.txt to load the terms.teach recipe using the en\_core\_web\_lg model which contains OntoNotes5 and GloVe with 685.000 vectors and 300 dimensions.
+Once we were set up, we could use the command \bverb{prodigy terms.teach function\_pattern en\_core\_web\_lg --seeds function.txt} to load the \bverb{terms.teach} recipe using the \bverb{en\_core\_web\_lg} model which contains OntoNotes5 and GloVe with 685.000 vectors and 300 dimensions.
 The model was loaded with three seed terms (function, task, use) in our function.txt text file.
 Prodigy launches a local web-server (Figure \ref{fig:figure11}) where we can graphically see the words to categorise and can accept, reject or ignore words.
 We can also undo our classification and revisit a word.
@@ -489,12 +499,12 @@ This process was repeated for function, ritual and myth using a fresh pattern fi
 \vspace*{1.2em}
 
 The terms.teach recipe uses word2vec and delivered promising results.
-We expected to get better results using sense2vec through the textcat.teach recipe and a new format for seed terms using JSON (a file format for human-readable data objects) instead of plain text.
+We expected to get better results using sense2vec through the \bverb{textcat.teach} recipe and a new format for seed terms using JSON (a file format for human-readable data objects) instead of plain text.
 Seed terms in sense2vec can be initialised using their parts-of-speech, so we can compare results using our focus words as nouns instead other parts that the algorithm identifies in our corpus.
 However, we did not get this to work as there are more files required for sense2vec to function.
 Simply loading the new seeds as JSON produced errors and loading the seeds from the plain text file assigned verb as a POS for use.
 Furthermore, the only corpus that worked out-of-the box with the sense2vec model was Reddit.
-Reddit includes the required vectors that are either missing or in a wrong format using en\_core\_web\_lg, making a straight comparison with the word2vec model difficult.
+Reddit includes the required vectors that are either missing or in a wrong format using \bverb{en\_core\_web\_lg}, making a straight comparison with the word2vec model difficult.
 
 %===================================
 
@@ -560,7 +570,7 @@ We also want to try another corpus for training and see if the model finds more 
 The output from Table \ref{fig:table5} will have to be evaluated by non-experts and compared to the dictionary results.
 
 In the next document, we will need to get back to the bigger picture of defining Design for Meaning.
-In this publication we focused on NLP and assumed some prior knowledge of the works by Csikszentmihalyi and Rochberg-Halton (1981), or more recently by Crilly, Maier, and Clarkson (2008), Diller, Shedroff and Rhea (2008) or Gobé (2009).
+In this publication we focused on NLP and assumed some prior knowledge of the works by Csikszentmihalyi and Rochberg-Halton (1981) \cite{csikszentmihalyi1981}, or more recently by Crilly, Maier, and Clarkson (2008) \cite{crilly2008}, Diller, Shedroff and Rhea (2008) \cite{diller2008} or Gobé (2009) \cite{gobe2009}.
 
 The plan for the next phase of this project is as follows:
 
@@ -575,28 +585,82 @@ The plan for the next phase of this project is as follows:
 
 %===================================
 
-\chapter{Contextualisation}
+\chapter{Phase 2: Contextualisation}
 
 \section*{Introduction}
 
-We pick up where we left off. Compare to the plan made in June. We researched on context (Automotive Cars), made two surveys.
+The weakness of the first stage of our research was a lack of focus.
+We did not want to limit our results but the nature of NLP requires some specificity to get good results.
+In this chapter, we are introducing context to our research.
+We are looking at function, ritual and myth in the context of autonomous vehicles (AVs).
 
-todo
-\begin{itemize}
-	\item add references for websites to bibliography
-	\item justify AV context
-	\item design final test
-	\item words, enhanced with images
-	\item examples of function, ritual and myth in vehicles (giacomin)
-\end{itemize}
+The plan written at the conclusion of the first phase needs to be adapted to accommodate for our context. 
+We want to find out what aspects of the AV experience do people associate with function, ritual and myth. 
+To do that, we will first need to find a common linguistic ground:
+What words do people associate with function, ritual and myth?
+This time, we conducted a survey and received 234 responses. 
+With the language established through NLP research as well as individual responses, we can design a survey using words and images that people attach to different meanings.
+
+While AVs have been used since Lawrence and Elmer Sperry's 1916 unmanned air vehicle and industrially as assembly or warehouse robots or military drones (Nonami, 2007) \cite{nonami2007}, their use has not yet emerged for private citizens.
+AVs for the public are still only found in driverless trains in airports or Milan's metro system and levels of autonomy in cars, such as cruise control or automatic breaking and parking (Bimbraw, 2015, Duffy and Hopkins, 2013) \cite{bimbraw2015} \cite{duffy2013}. %These techniques are also the enablers for modern technologies of autonomous cars like lane parking, adaptive cruise control, automatic braking, etc (Bimbraw 2015; Duffy and Hopkins 2013). 
+The full self-driving car is yet only found in Elon Musk's plans for Tesla's roadmap.
+The current main issues with these vehicles is a lack of trust from the general population, as well as unresolved legal and ethical questions about the responsibilities in case of accidents. 
+We will go into more detail about these issues in the following \autoref{sec:trust}.
+
+%Cite levels of automation Table 1. Levels of automation as defined by the SAE International  (Kyriakidis et al. 2019; “SAE International” 2019) 
 
 %===================================
 
-\section{Context: Automotive Vehicles}
+\section{Context: Cars}
+
+The Transport sector is important in various ways.
+Economically, the industry accounts for roughly 5 percent of the European workforce and GDP (EU Commission, 2015) \cite{eucom2015}.
+Environmentally, the sector accounts for almost a third of greenhouse gas emissions and over 70 percent from that comes from road transport (EEA, 2017) \cite{eea2019}. 
+Symbolically, the automobile means freedom.
+
+We tasked students of the Digital and Interaction Design Master's course at Politecnico di Milano to show the meaning and metaphors used in cars.
+
+\vspace*{1.2em}
+\begin{figure}[!htbp]
+  \hspace*{-3.666em}
+  \includegraphics[width=1.19\linewidth]{fig12.png}
+  \caption{Metaphors in Cars}
+  \label{fig:fig12}
+\end{figure}
+\vspace*{1.2em}
+
+\subsection{Function}
+
+Function
+
+\subsection{Ritual}
+
+Rituak
+
+\subsection{Myth}
+
+Myth
+
+%===================================
+
+\section{Shifting gears: Automotive Vehicles}
+
+Our methodology to gain insights about people's associations with autonomous cars needs to start by establishing a language we can use to communicate. 
+The field of autonomous vehicles is expanding from industrial purposes to public and personal transport and with it the public opinion.
+We see the topic 
+
+\subsection{Trust}
+\label{sec:trust}
+
+Trust happens between people. The trust between man and machine relates to the fields of Human-Machine Interaction (HMI) and Human-Computer Interaction (HCI)
+
+\subsection{Ethics}
 
 %===================================
 
 \section{Survey 1: Word Meaning}
+
+
 
 %===================================
 

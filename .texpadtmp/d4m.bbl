@@ -1,0 +1,160 @@
+\begin{thebibliography}{10}
+
+\bibitem{fournier1991}
+S.~Fournier, ``Meaning-based framework for the study of consumer-object
+  relations.''
+
+\bibitem{giacomin2017}
+J.~Giacomin, ``What is design for meaning?,'' 2017.
+
+\bibitem{monkeylearn2019}
+``Natural language processing (nlp) – what is nlp and how does it work?.''
+
+\bibitem{turing1950}
+A.~M. Turing, ``Computing machinery and intelligence,'' 1950.
+
+\bibitem{hutchins2004}
+W.~J. Hutchins, ``The georgetown-ibm experiment demonstrated in january 1954,''
+  in {\em Machine Translation: From Real Users to Research} (R.~E. Frederking
+  and K.~B. Taylor, eds.), (Berlin, Heidelberg), pp.~102--114, Springer Berlin
+  Heidelberg, 2004.
+
+\bibitem{committee1966language}
+N.~Committee, {\em Language and Machines: Computers in Translation and
+  Linguistics; a Report}.
+\newblock National Research Council. Publication, National Academy of Sciences,
+  National Research Council, 1966.
+
+\bibitem{weizenbaum1966}
+J.~Weizenbaum, ``Eliza—a computer program for the study of natural language
+  communication between man and machine,'' {\em Commun. ACM}, vol.~9,
+  p.~36–45, Jan. 1966.
+
+\bibitem{powers1984}
+D.~Powers, ``Natural language the natural way,'' {\em Computer Compacts},
+  vol.~2, no.~3, pp.~100 -- 109, 1984.
+
+\bibitem{mitchell1997}
+T.~Mitchell, {\em Machine Learning}.
+\newblock McGraw Hill, 1997.
+
+\bibitem{brown1979}
+W.~N. Francis and H.~Kucera, ``Brown corpus manual,'' tech. rep., Department of
+  Linguistics, Brown University, Providence, Rhode Island, US, 1979.
+
+\bibitem{wordnet1995}
+G.~A. Miller, ``Wordnet: A lexical database for english,'' {\em Commun. ACM},
+  vol.~38, p.~39–41, Nov. 1995.
+
+\bibitem{altszyler2017}
+E.~Altszyler, S.~Ribeiro, M.~Sigman, and D.~F. Slezak, ``The interpretation of
+  dream meaning: Resolving ambiguity using latent semantic analysis in a small
+  corpus of text,'' {\em Consciousness and Cognition}, vol.~56.
+
+\bibitem{harris1954}
+Z.~S. Harris, ``Distributional structure,'' {\em WORD}, vol.~10, no.~2-3,
+  pp.~146--162, 1954.
+
+\bibitem{mikolov2013}
+T.~Mikolov, K.~Chen, G.~Corrado, and J.~Dean, ``Efficient estimation of word
+  representations in vector space,'' 2013.
+
+\bibitem{maas2010}
+A.~L. Maas and A.~Ng, ``A probabilistic model for semantic word vectors,''
+  2010.
+
+\bibitem{reisinger2010}
+J.~Reisinger and R.~J. Mooney, ``Multi-prototype vector-space models of word
+  meaning,'' in {\em Human Language Technologies: The 2010 Annual Conference of
+  the North American Chapter of the Association for Computational Linguistics},
+  HLT '10, (USA), p.~109–117, Association for Computational Linguistics,
+  2010.
+
+\bibitem{chen2015}
+T.~Chen, R.~Xu, Y.~He, and X.~Wang, ``Improving distributed representation of
+  word sense via {W}ord{N}et gloss composition and context clustering,'' in
+  {\em Proceedings of the 53rd Annual Meeting of the Association for
+  Computational Linguistics and the 7th International Joint Conference on
+  Natural Language Processing (Volume 2: Short Papers)}, (Beijing, China),
+  pp.~15--20, Association for Computational Linguistics, July 2015.
+
+\bibitem{rothe2015}
+S.~Rothe and H.~Schütze, ``{A}uto{E}xtend: Extending word embeddings to
+  embeddings for synsets and lexemes,'' in {\em Proceedings of the 53rd Annual
+  Meeting of the Association for Computational Linguistics and the 7th
+  International Joint Conference on Natural Language Processing (Volume 1: Long
+  Papers)}, (Beijing, China), pp.~1793--1803, Association for Computational
+  Linguistics, July 2015.
+
+\bibitem{trask2015}
+A.~Trask, P.~Michalak, and J.~Liu, ``sense2vec - a fast and accurate method for
+  word sense disambiguation in neural word embeddings,'' 2015.
+
+\bibitem{horn2017}
+F.~Horn, ``Context encoders as a simple but powerful extension of word2vec,''
+  in {\em Proceedings of the 2nd Workshop on Representation Learning for
+  {NLP}}, (Vancouver, Canada), pp.~10--14, Association for Computational
+  Linguistics, Aug. 2017.
+
+\bibitem{speer2018}
+R.~Speer, J.~Chin, and C.~Havasi, ``Conceptnet 5.5: An open multilingual graph
+  of general knowledge,'' 2018.
+
+\bibitem{smilkov2016}
+D.~Smilkov, N.~Thorat, C.~Nicholson, E.~Reif, F.~B. Viégas, and M.~Wattenberg,
+  ``Embedding projector: Interactive visualization and interpretation of
+  embeddings,'' 2016.
+
+\bibitem{wattenberg2016}
+M.~Wattenberg, F.~Viégas, and I.~Johnson, ``How to use t-sne effectively,''
+  {\em Distill}, 2016.
+
+\bibitem{alrfou2013}
+P.~B. Al-Rfou{'}, Rami and S.~Skiena, ``Polyglot: Distributed word
+  representations for multilingual {NLP},'' in {\em Proceedings of the
+  Seventeenth Conference on Computational Natural Language Learning}, (Sofia,
+  Bulgaria), pp.~183--192, Association for Computational Linguistics, 8 2013.
+
+\bibitem{csikszentmihalyi1981}
+M.~Csikszentmihalyi and E.~Rochberg-Halton, {\em The Meaning of Things:
+  Domestic Symbols and the Self}, vol.~12.
+\newblock 01 1981.
+
+\bibitem{crilly2008}
+N.~Crilly, A.~Maier, and P.~Clarkson, ``Representing artefacts as media:
+  Modelling the relationship between designer intent and consumer experience,''
+  {\em International Journal of Design}, vol.~2, pp.~15--27, 2008.
+
+\bibitem{diller2008}
+S.~Diller, N.~Shedroff, and D.~Rhea, ``Making meaning: How successful
+  businesses deliver meaningful customer experiences,'' 01 2005.
+
+\bibitem{gobe2009}
+M.~Gobé, {\em Emotional branding: The new paradigm for connecting brands to
+  people}.
+\newblock New York: Allworth Press, 2009.
+
+\bibitem{nonami2007}
+K.~Nonami, ``Prospect and recent research and development for civil use
+  autonomous unmanned aircraft as uav and mav,'' {\em Journal of System Design
+  and Dynamics}, vol.~1, pp.~120--128, 01 2007.
+
+\bibitem{bimbraw2015}
+K.~Bimbraw, ``Autonomous cars: Past, present and future a review of the
+  developments in the last century, the present scenario and the expected
+  future of autonomous vehicle technology,'' {\em 2015 12th International
+  Conference on Informatics in Control, Automation and Robotics (ICINCO)},
+  vol.~01, pp.~191--198, 2015.
+
+\bibitem{duffy2013}
+S.~N. Duffy and J.~Hopkins, ``Sit, stay, drive: The future of autonomous car
+  liability,'' 2013.
+
+\bibitem{eucom2015}
+{Directorate-General for Mobility and Transport (European Commission)},
+  ``Employment in the {EU} transport sector,'' 2015.
+
+\bibitem{eea2019}
+{European Environment Agency}, 2019.
+
+\end{thebibliography}

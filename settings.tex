@@ -8,6 +8,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
+\usepackage{authblk}
+
 \usepackage{graphicx}
 \graphicspath{ {links/} }
 
@@ -47,6 +49,39 @@ BoldItalicFont = Equity Text B Bold Italic.otf ]
 \definecolor{cchapter}{cmyk}{0,0.8,1,0.25}
 \definecolor{csection}{cmyk}{0,0.8,0.9,0.4}
 \definecolor{csubsection}{cmyk}{0,0.4,0.4,0.65}
+
+% ------------------------
+
+\usepackage{fancyvrb} %verbatim bg color
+\usepackage{newverbs}
+%\newverbcommand{\cverb}{\color{red}}{}
+\newverbcommand{\bbbverb}
+  {\begin{lrbox}{\verbbox}}
+  {\end{lrbox}\colorbox{gray!15}{\box\verbbox}}
+
+% ------------------------
+  
+\usepackage{soul}
+
+\definecolor{lightgrey}{rgb}{0.925, 0.925, 0.925}
+\sethlcolor{lightgrey}
+
+\makeatletter
+\def\SOUL@hlpreamble{%
+    \setul{}{2.6ex}% increased by 1ex
+    \let\SOUL@stcolor\SOUL@hlcolor
+    \dimen@\SOUL@ulthickness
+    \dimen@i=-.75ex % increased by -0.25ex
+    \advance\dimen@i-.4\dimen@
+    \edef\SOUL@uldepth{\the\dimen@i}%
+    \let\SOUL@ulcolor\SOUL@stcolor
+    \SOUL@ulpreamble
+}
+\makeatother
+
+\newcommand*{\bverb}[1]{{\ttfamily\hyphenchar\font=45\relax\hl{~#1~}}}
+
+% ------------------------
 
 \usepackage{titlesec}
 \titleformat{\chapter}[display]

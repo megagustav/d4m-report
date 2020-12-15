@@ -1,12 +1,9 @@
 \documentclass[12pt, usenames, dvipsnames]{report}
 \input{settings}
 
-
-\title {A Taxonomy for Design for Meaning: Function, Ritual and Myth in Autonomous Vehicles}
+\title {[DRAFT] A Taxonomy for Design for Meaning: Function, Ritual and Myth in Autonomous Vehicles}
 %\author {Ajovalasit, M., Giacomin, J., Moorhouse, G.}
-\date{November 2020
-
-to be submitted for publication}
+\date{December 2020}
 % To be submitted for publication in the International Journal of Design
 
 \author[1]{Marco Ajovalasit}
@@ -104,7 +101,7 @@ Finally, the results are compared against ready-to-use online tools for NLP.
 \chapter{Dictionary Definitions}
 
 The initial process of gathering definitions, synonyms, antonyms and other related words was manually combing through various established dictionaries and online references and to collect the terms in a table.
-The table in Figure \ref{fig:table1} represented below is an abbreviated version showing the breadth and range of results and not the full scope.
+The table in Figure \ref{tab:table1} represented below is an abbreviated version showing the breadth and range of results and not the full scope.
 The full version is available at \href{https://meaning.pub.}{meaning.pub}.
 
 \vspace*{1.2em}
@@ -112,7 +109,7 @@ The full version is available at \href{https://meaning.pub.}{meaning.pub}.
   \hspace*{-3.666em}
   \includegraphics[width=1.19\linewidth]{table1.png}
   \caption{Related Words list --- a summarised range of results from selected dictionaries. the full table is available on our research website \href{https://meaning.pub.}{meaning.pub}.}
-  \label{fig:table1}
+  \label{tab:table1}
 \end{figure}
 \vspace*{1.2em}
 
@@ -130,7 +127,7 @@ If we want to build a real understanding of natural language used by non-experts
 
 \chapter{Corpus Search}
 
-In Figure \ref{fig:table2} we compare different corpora used by computer scientists and linguists for extraction of natural language.
+In Figure \ref{tab:table2} we compare different corpora used by computer scientists and linguists for extraction of natural language.
 These corpora feature samples from written and spoken English (and other languages), and in some cases are already trained or annotated with vectors to be understood by machine learning programs.
 
 \vspace*{1.2em}
@@ -138,7 +135,7 @@ These corpora feature samples from written and spoken English (and other languag
   \hspace*{-3.666em}
   \includegraphics[width=1.19\linewidth]{table2.png}
   \caption{Comparison of selected corpora}
-  \label{fig:table2}
+  \label{tab:table2}
 \end{figure}
 \vspace*{1.2em}
 
@@ -182,17 +179,17 @@ Corpus-based semantic representations (word embeddings) use statistical patterns
 In the semantic word-space, terms with a similar meaning tend to form a cluster.
 This relies on the concept that words with similar meaning appear in similar contexts (Harris, 1954) \cite{harris1954}.
 
-Depending on the algorithm used to calculate the embeddings, different features (Figure \ref{fig:table3}) are used.
+Depending on the algorithm used to calculate the embeddings, different features (Figure \ref{tab:table3}) are used.
 This is where the field becomes too opaque for us to offer a precise explanation, so we focused on what we can explain.
 
-[Figure \ref{fig:table3} on next page]
+[Figure \ref{tab:table3} on next page]
 
 \vspace*{1.2em}
 \begin{figure}[!htbp]
   \hspace*{-3.666em}
   \includegraphics[width=1.19\linewidth]{table3.png}
   \caption{comparison of selected algorithms}
-  \label{fig:table3}
+  \label{tab:table3}
 \end{figure}
 \vspace*{1.2em}
 
@@ -280,11 +277,11 @@ Other basic features of libraries include tokenisation, where each word and symb
   \hspace*{-3.666em}
   \includegraphics[width=1.19\linewidth]{table4.png}
   \caption{comparison of selected NLP libraries}
-  \label{fig:table4}
+  \label{tab:table4}
 \end{figure}
 \vspace*{1.2em}
 
-From Figure \ref{fig:table4} above, SpaCy can be identified as the most promising candidate.
+From Figure \ref{tab:table4} above, SpaCy can be identified as the most promising candidate.
 It has most of the features and although it’s relatively new and not as established as NLTK, it has a comprehensive documentation along with tutorials that we can follow along to learn the tool.
 From our research, it seems like a favourite among new NLP projects for its speed and ease of use.
 The makers of SpaCy, \href{https://explosion.ai}{Explosion}, also have a text classification and training tool called Prodigy that can be used for text classification.
@@ -336,7 +333,7 @@ We wrote a script that gets the related words of our input term, removes the der
 The API calls in our script are humanly-readable and go as followed:
 First, we get the related words using \bverb{http://api.conceptnet.io/related/c/en/alpha}, where alpha is our input word.
 Then we call derived terms \bverb{http://api.conceptnet.io/query?node=/c/en/alpha\&rel=/r/DerivedFrom} and forms of \bverb{http://api.conceptnet.io/query?node=/c/en/alpha\&rel=/r/FormOf} and subtract both from the related words list.
-The difference is output into a table which we copied into Table \ref{fig:table5}.
+The difference is output into a table which we copied into Table \ref{tab:table5}.
 We also attached weighting to the related terms, the meaning of the weighting however is not qualifiable, nor is a low weighting an indicator for uninteresting words.
 We wrote the script to have flexibility over the number of output words and compared the results with 10, 20 and 50 output words per term.
 The results were poor with 10 results and we did not gain further insight looking at 50 results.
@@ -359,7 +356,7 @@ Their demo allows for the selection of different models and next to searching
 for nearby words also offers the possibility to view the numeric similarity of two words and to compute a word analogy akin to word2vec's example \bverb{king - man + woman $\approx$ queen} (Mikolov et al., 2013) \cite{mikolov2013}.
 
 We did not use the comparison or analogy features and instead focused on getting 10 related words for a single input word and repeated the process for each of our three focus words.
-The results were copied into Figure \ref{fig:table5}).
+The results were copied into Figure \ref{tab:table5}).
 
 \subsection{Anthony Liu’s demo}
 
@@ -416,7 +413,7 @@ We won’t get into details about their data visualisation attributes in this pa
 
 To read data, we searched for our focus words, increased the points to 1000 and switched to using t-SNE with the standard settings of 200 dimensions, a perplexity of 8, a learning rate of 10 and no supervision.
 We let the calculations run for 8000 iterations.
-From the table on the right in Figure \ref{fig:figure6}, we copied the 10 first results of nearest points into our results table (Table \ref{fig:table5}).
+From the table on the right in Figure \ref{fig:figure6}, we copied the 10 first results of nearest points into our results table (Table \ref{tab:table5}).
 
 \vspace*{1.2em}
 \begin{figure}[!htbp]
@@ -460,7 +457,7 @@ While some of these clusters are physically separated from the rest of the words
 \subsection{Polyglot}
 
 Polyglot is another multi-lingual NLP library developed by Al-Rfou et al. (2013) \cite{alrfou2013} with an online demo available on Al-Rfou’s website.
-It is not clear from our research if Polyglot is using word2vec for their word embeddings but since the results in Table \ref{fig:table5} vary from other word2vec models, we can assume Polyglot uses more intelligent word-sense disambiguation and handles polysemy as well as stemming and lemmatisation.
+It is not clear from our research if Polyglot is using word2vec for their word embeddings but since the results in Table \ref{tab:table5} vary from other word2vec models, we can assume Polyglot uses more intelligent word-sense disambiguation and handles polysemy as well as stemming and lemmatisation.
 
 \vspace*{1.2em}
 \begin{figure}[!htbp]
@@ -486,7 +483,7 @@ The model was loaded with three seed terms (function, task, use) in our function
 Prodigy launches a local web-server (Figure \ref{fig:figure11}) where we can graphically see the words to categorise and can accept, reject or ignore words.
 We can also undo our classification and revisit a word.
 
-For our results table (Table \ref{fig:table5}) we wrote down the first 10 words that we received from Prodigy without accepting or rejecting them.
+For our results table (Table \ref{tab:table5}) we wrote down the first 10 words that we received from Prodigy without accepting or rejecting them.
 This process was repeated for function, ritual and myth using a fresh pattern file for each, where training data is saved to and can be loaded from in a second round of text classification.
 
 \vspace*{1.2em}
@@ -510,7 +507,7 @@ Reddit includes the required vectors that are either missing or in a wrong forma
 
 \section{Comparison of results}
 
-We compiled results from all above tools into a table (Table \ref{fig:table5}).
+We compiled results from all above tools into a table (Table \ref{tab:table5}).
 From this comparison we can identify certain patterns regarding the context of the words and to an extent understand the effect of a corpus or algorithm on the results.
 
 It can be seen that some words are found in almost every tool while others are unique to a single one.
@@ -521,7 +518,7 @@ There are also many repetitions of word stems and lemmas which speaks for poor d
   \hspace*{-3.666em}
   \includegraphics[width=1.19\linewidth]{table5.png}
   \caption{Results from online demos and local scripts using different algorithms and corpora}
-  \label{fig:table5}
+  \label{tab:table5}
 \end{figure}
 \vspace*{1.2em}
 
@@ -545,12 +542,12 @@ This finding was interesting as it closes the loop of this document by returning
 \section{Current Conclusions}
 
 Regarding our selection of SpaCy paired with Prodigy as the focus, it cannot be ruled out that this combination is still the “winner”, but it is clear that we made mistakes in the application of the tools.
-In contrast, the results from the Polyglot demo are the most promising in Table \ref{fig:table5}. 
+In contrast, the results from the Polyglot demo are the most promising in Table \ref{tab:table5}. 
 We have breadth of context without repetitions and are rediscovering symbolism as a potential alternative to myth, which is negatively loaded.
 
 When we used Prodigy with one one seed term (function), the results we saw were exactly the same as those using Gensim+FastText using GloVe.
 Both libraries share GloVe and word2vec. Similarity can be expected, a mirror image was surprising.
-The results found in Table \ref{fig:table5} are using three seed words.
+The results found in Table \ref{tab:table5} are using three seed words.
 We also tried 15 seed terms and these were our results: other functions, main function, method, other function, specific function, multiple functions, constraint, certain function.
 It is unclear what conclusions we can draw from this.
 
@@ -567,7 +564,7 @@ We did not get to that stage and wish to do this at a later point.
 To produce results for the import, we want to revisit ou training and have another the vector files to see if all features (lemmatisation, stemming, polysemy, etc.) are enabled, and to control POS for seed terms.
 We also want to try another corpus for training and see if the model finds more diverse and less repetitive results.
 
-The output from Table \ref{fig:table5} will have to be evaluated by non-experts and compared to the dictionary results.
+The output from Table \ref{tab:table5} will have to be evaluated by non-experts and compared to the dictionary results.
 
 In the next document, we will need to get back to the bigger picture of defining Design for Meaning.
 In this publication we focused on NLP and assumed some prior knowledge of the works by Csikszentmihalyi and Rochberg-Halton (1981) \cite{csikszentmihalyi1981}, or more recently by Crilly, Maier, and Clarkson (2008) \cite{crilly2008}, Diller, Shedroff and Rhea (2008) \cite{diller2008} or Gobé (2009) \cite{gobe2009}.
@@ -592,13 +589,24 @@ The plan for the next phase of this project is as follows:
 The weakness of the first stage of our research was a lack of focus.
 We did not want to limit our results but the nature of NLP requires some specificity to get good results.
 In this chapter, we are introducing context to our research.
-We are looking at function, ritual and myth in the context of autonomous vehicles (AVs).
+We will be explaining more about our rationale later but we decided to be looking at function, ritual and myth in the context of autonomous vehicles (AVs).
 
-The plan written at the conclusion of the first phase needs to be adapted to accommodate for our context. 
-We want to find out what aspects of the AV experience do people associate with function, ritual and myth. 
+The plan written at the conclusion of the first phase needs to be adapted to accommodate for our context.
+Here is a revised set of next steps:
+
+\begin{enumerate}
+	\item Compare and contrast Table 5 with Table 1 and potentially compile a comprehensive merged version. \emph{Low priority, potentially defer.}
+	\item Build a survey of words to send out to testers and evaluate which words resonate most with people. Get input from people on words that they think are missing from the table. \emph{Build a new corpus from various papers.}
+	\item While waiting on results from the survey, we can have another look at NLP. \emph{No}
+	\item Re-evaluate the word associations \emph{No}
+	\item Build a new survey where we have people classify familiar products into the three categories of meaning, using our new word list. \emph{Not products, but attributes of the AV experience}
+	\item Evaluate and identify potential patterns
+\end{enumerate}
+
+We want to find out what aspects of the AV experience people associate with function, ritual and myth. 
 To do that, we will first need to find a common linguistic ground:
 What words do people associate with function, ritual and myth?
-This time, we conducted a survey and received 234 responses. 
+This time, we conducted surveys with people instead of relying on algorithmic analysis of language. 
 With the language established through NLP research as well as individual responses, we can design a survey using words and images that people attach to different meanings.
 
 \vspace*{1.2em}
@@ -612,11 +620,14 @@ With the language established through NLP research as well as individual respons
 
 While AVs have been used since Lawrence and Elmer Sperry's 1916 unmanned air vehicle and industrially as assembly or warehouse robots or military drones (Nonami, 2007) \cite{nonami2007}, their use has not yet emerged for private citizens.
 AVs for the public are still only found in driverless trains in airports or Milan's metro system and levels of autonomy in cars, such as cruise control or automatic breaking and parking (Bimbraw, 2015, Duffy and Hopkins, 2013) \cite{bimbraw2015} \cite{duffy2013}. %These techniques are also the enablers for modern technologies of autonomous cars like lane parking, adaptive cruise control, automatic braking, etc (Bimbraw 2015; Duffy and Hopkins 2013). 
-The full self-driving car is yet only found in Elon Musk's plans for Tesla's roadmap.
+The full self-driving consumer car is yet only found in Elon Musk's plans for Tesla's roadmap.
 The current main issues with these vehicles is a lack of trust from the general population, as well as unresolved legal and ethical questions about the responsibilities in case of accidents. 
 We will go into more detail about these issues in the following \autoref{sec:trust}.
 
-%Cite levels of automation Table 1. Levels of automation as defined by the SAE International  (Kyriakidis et al. 2019; “SAE International” 2019) 
+For this chapter, we will first look at our categories in the context of traditional cars, with examples taken from previous research (Giacomin, 2020) \cite{giacomin2020}.
+Then, we will shift to the context of AV and see how we can translate our examples, and what attributes can be mapped from traditional to autonomous cars.
+Later, we will explain our surveys and discuss results.
+Finally, we can debate whether our hypotheses formulated in \autoref{sec:newmetaphors} can be validated.
 
 %===================================
 
@@ -634,7 +645,7 @@ In the following subsections we will have a look at meanings in traditional vehi
 
 \subsection{Function}
 
-Mail delivery, garbage disposal, infrastructure inspections.
+Mail delivery, garbage disposal, infrastructure inspections \cite{giacomin2020}.
 
 These ways of transport are relevant to our system and while there may be a regularity to these, they are not used in a celebratory way or in a social context. 
 The potentially mythical aspect about these is not inherent in the product itself but in the system behind it (for example the postal worker as a symbol does not stem from their vehicle).
@@ -650,7 +661,7 @@ The potentially mythical aspect about these is not inherent in the product itsel
 
 \subsection{Ritual}
 
-The daily commute by bus, car or train.
+The daily commute by bus, car or train \cite{giacomin2020}.
 Driving home for Christmas.
 
 These can have functional aspects too, but they also stand for interaction and have an emotional attachment, at least in hindsight.
@@ -666,7 +677,7 @@ These can have functional aspects too, but they also stand for interaction and h
 
 \subsection{Myth}
 
-The aspirational sports-car that may be purchased in a mid-life crisis.
+The aspirational sports-car \cite{giacomin2020}.
 
 \vspace*{1.2em}
 \begin{figure}[!htbp]
@@ -683,8 +694,50 @@ The aspirational sports-car that may be purchased in a mid-life crisis.
 
 Our methodology to gain insights about people's associations with autonomous cars needs to start by establishing a language we can use to communicate. 
 The field of autonomous vehicles is expanding from industrial purposes to public and personal transport and with it the public opinion.
-We see the topic as something of economic and environmental importance, as the reaching global climate goals depends on collaboration from the industry. 
-As such, vehicles and in particular autonomous vehicles are an important global topic, relevant to professionals as well as private citizens.
+We see the topic as something of not only social but also economic and environmental importance, as the reaching global climate goals depends on collaboration from the industry. 
+As such, vehicles and in particular autonomous vehicles are an important global topic, relevant to industry professionals as well as private citizens.
+
+\subsection{Levels of autonomy}
+
+The Society of Automotive Engineers (\href{https://www.sae.org/standards/content/j3016_201806/}{SAE International}) defined the J3016 levels of automation in vehicles, a practise that performs part or all of the dynamic driving task (DDT).
+They provided a taxonomy for the six levels from no automation (Level 0) to full driving automation (Level 5) in the context of motor vehicles on roadways \cite{sae2018}. 
+
+Most cars today sit at level 0, where the human performs the DDT but may be assisted by the car in certain ways: emergency braking or warnings in case of line departure or other vehicles in the driver's blind spot.
+
+The lowest level of automation is Level 1, where the car performs some of the driving automatically, such as adaptive cruise control, while the driver still controls steering and braking.
+Many cars today also fall into the Level 1 category where the car is capable of steering or acceleration/braking support.
+
+At Level 2 we reach the state-of-the-art in current consumer car features such as Tesla's Autopilot or GM's Super Cruise systems.
+This is known as advanced driver assistance systems (ADAS), where the human still monitors the driving environment but the car provides automatic steering, \emph{and} acceleration/breaking support.
+
+Level 3 enters the category of automated driving features, while the previous three levels were driver support features.
+Audi's 2019 A8L has a \emph{Traffic Jam Pilot} feature, which allows the car to autonomously drive in heavy traffic up to 60 km/h without any assistance from the driver, alas the feature is awaiting regulatory approval \cite{paukert2018}.
+Honda have announced a version of their Legend luxury sedan for 2021 which will also put the car's autonomous features at Level 3 \cite{reuters2020}.
+Another candidate for Level 3 would be Tesla's \emph{full self-driving} (FSD) feature.
+FSD is a misleading name, as it does not function on every road-type and will require driver intervention at times.
+Furthermore, the feature is still in beta-mode, costs \$10.000 to unlock and while technologically impressive, Elon Musk has been promising full self-driving Teslas since at least 2015 \cite{etherington2020} \cite{korosec2015}.
+In March of 2020 the company was ranked last for both strategy and execution in the autonomous driving sector \cite{cuneo2020}.
+
+Level 4 is in most definitions full self-driving, limited only by certain rare road conditions.
+The car drives itself, even if a human driver does not respond to a request to intervene.
+At Level 5, the car is autonomous on all road types.
+
+\vspace{1em}
+\begin{table}[h!]
+\setlength\extrarowheight{1pt}
+\begin{tabular}{@{}>{\raggedright}p{2.5cm}>{\raggedright}p{2.5cm}>{\raggedright\arraybackslash}p{10cm}@{}}
+\toprule
+Monitoring of the driving environment          & Level of automation       & Description                                                                                                                                                                                                 \\ \midrule
+                                           & 0: Driver only            & The human driver performs all aspects of the dynamic driving task.                                                                                                                                           \\ \cmidrule(l){2-3}
+                                           & 1: assisted automation    & A driver assistance system performs either steering or acceleration/deceleration, while the human driver is expected to carry out the remaining aspects of the dynamic driving task                         \\ \cmidrule(l){2-3}
+\multirow{-5}{*}{Human driver}             & 2: partial automation     & One or more driver assistance systems perform both steering and acceleration/deceleration, while the human driver is expected to carry out all remaining aspects of the dynamic driving task .               \\ \midrule
+                                           & 3: conditional automation & An automated driving system performs all aspects of the dynamic driving task (in conditions for which it was designed), but the human driver is expected to respond appropriately to a request to intervene. \\ \cmidrule(l){2-3}
+                                           & 4: high automation        & An automated driving system performs all aspects of the dynamic driving task (in conditions for which it was designed), even if the human driver does not respond appropriately to a request to intervene.   \\ \cmidrule(l){2-3}
+\multirow{-7}{*}{\parbox{2.5cm}{Automated driving system}} & 5: full automation        & An automated driving system performs all aspects of the dynamic driving task under all roadway and environmental conditions.                                                                                 \\ \cmidrule(l){1-3} 
+\end{tabular}
+\caption{SAE Standard J3016 - Levels of Automated Driving \cite{sae2018}}
+\label{tab:sae-standard}
+\end{table}
 
 \subsection{Trust}
 \label{sec:trust}
@@ -698,6 +751,94 @@ There are several papers exploring the issue of trust in AVs such as Häuslschmi
 This factor slows down industrial innovation as the risks are high and boundaries not yet defined.
 Some car manufacturers are shying away from automation as their income lays in traditional cars and they do not want to damage their cash cow.
 Ironically, holding on to what is proven to work is not a universal recipe for success and rather leaves room for real innovators to swoop in and take a share of the profit.
+
+%===================================
+
+\chapter{New Metaphors}
+\label{sec:newmetaphors}
+
+\section*{Introduction}
+
+We identified one iconic example per category of Function, Ritual and Myth for traditional vehicles, but how do the meanings map to autonomous cars?
+What does the mail delivery vehicle look like in the context of AV? 
+Are the attributes of \emph{aspirational} and \emph{self-driving} compatible in a sports car?
+If not, what qualities lie within a fun autonomous vehicle we look at longingly?
+We aim to answer these questions in the following sections.
+
+%===================================
+
+\section{Function: Mail Delivery}
+
+The global distribution chain is already a largely automated organism. 
+The main involvement of humans is in last-mile delivery:
+Getting items from the distribution center to the door \cite{mckinsey2016}.
+Delivery companies use vans and human drivers, who also bring the mail to the recipient's door.
+This leaves the van parked on the road for extended periods while the delivery person makes their way through a multi-story residential block.
+In large cities such as New York, where more than 1.5 million packages are delivered daily, leaving vans double-parked on the street plays a large role not only in congestion and emissions, but also puts infrastructure to its limits.
+Delivery vehicles are stopping in driveways, on bike lanes, and have in 2018 collected over \$27 million in fines \cite{haag2019}.
+
+\vspace*{1.2em}
+\begin{figure}[!htbp]
+  \hspace*{5em}
+  \includegraphics[width=0.7\linewidth]{Brittainy Newman - NYT.png}
+  \caption{In congested cities there are many edge-cases which make it difficult for AVs to predict situations. Image credit: Brittainy Newman / New York Times}
+  \label{fig:newmannyt}
+\end{figure}
+\vspace*{1.2em}
+
+From 2009 to 2017 the average amount of deliveries to households tripled to more than 1.1 million.
+In 2020, with online-orders reaching new highs, there seems to be no sign of that trend slowing down.
+
+In an interview with The New York Times \cite{haag2019}, Sarah Kaufman, associate director of the Rudin Center for Transportation Policy and Management at New York University, spoke about a study on online shopping habits she worked on.
+“It’s now cheaper and easier to order anything online than it is to go to the store.
+We’ve entered an entirely new way of buying goods and services, but our infrastructure is only adapting incrementally, we need to completely rethink how we use our streets if we want to maintain our current shopping and delivery habits.”, Ms. Kaufman said.
+
+A paradigm shift in the vehicles occupying our cities can therefore be a valid attempt at addressing the issues surrounding traffic, pollution, noise and stress.
+We can help citizens and delivery companies, but employees of delivery companies might need retraining from driver to supervisors of AVs.
+
+McKinsey (2016) \cite{mckinsey2016} have identified seven delivery models looking at around 300 start-up companies in the last-mile sector and reviewing over 2.000 published articles about new technologies: 
+
+\begin{enumerate}
+	\item Today's traditional model of dedicated delivery person with a van, employed by the parcel delivery service provider, bringing parcels from a delivery base directly to the recipient.
+	\item Semiautonomous ground vehicles, using an AV but requiring a human driver for handoff and car supervision.
+	\item Autonomous ground vehicles (AGV), a mobile parcel locker without human intervention, with one central remote supervisor per eight AGVs.
+	\item Flying drones carrying parcels to their destination along the most direct air route with one supervisor per eight drones.
+	\item Ground droids --- small AVs the size or a larger parcel using the sidewalk, traveling roughly at walking speed, with one supervisor per 50 to 100 due to small size and low speed.
+	\item Crowdsourcing, creating flexibility in supply, is a low investment for parcel delivery companies.
+	\item Bike couriers employed by the companies, carrying a small number of letters and parcels.
+\end{enumerate}
+
+While the future of Amazon orders arriving via drone within minutes may still be science-fiction, it's not unreasonable to envision a combination of autonomous driving technology and human assistance --- after all, that space is already occupied by certain consumer cars today \cite{mcfarland2020}.
+
+The context of autonomous vehicles allows us to remove the human component from the equation:
+We can compare cars and their capabilities. 
+From the McKinsey study \cite{mckinsey2016} the models that allow for the closest comparison are models 2, 3, 4 and 5.
+Model 2 is very similar to today's model 1.
+McKinsey identify a high cost to implement autonomous delivery vehicles and do not see a large enough return on that investment if people are still required for final hand-off and supervision.
+Therefore, we can disregard model 2.
+Models 3, 4 and 5 can be classified:
+While 4 and 5 are for transport of individual parcels (or small amounts) going to individual addresses, the AGV is designed for mass-transport for a collection of addresses.
+Whether these vehicles stop at a street corner and demand recipients to collect their parcel or they stop at people's doorstep, these robots won't hand over the parcel.
+It seems like model 3 will be asking more from the recipient in the global distribution chain.
+We are then left to speculate how the mail delivery will work for those with a walking disability, even a temporary one such as a broken ankle or a cold forcing them to remain in bed.
+Will these people rely on the kindness of their neighbours or will the delivery services provide a more flexible, human delivery person for edge cases?
+
+The most likely contender then seems to be a ground droid capable of climbing stairs, as flying drones would not fare well in staircases.
+Perhaps the last-mile delivery method of the future is not one smart robot or a mobile locker but a combination of fast vehicles traveling through main streets and hyper-local AVs not for the entire last mile but merely the last metres. 
+
+%===================================
+
+\section{Ritual: Commuting}
+
+%===================================
+
+\section{Myth: The fun car}
+
+%===================================
+
+\chapter{Surveys}
+
+introduction...
 
 %===================================
 

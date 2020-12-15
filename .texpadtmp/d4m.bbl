@@ -150,6 +150,9 @@ K.~Bimbraw, ``Autonomous cars: Past, present and future a review of the
 S.~N. Duffy and J.~Hopkins, ``Sit, stay, drive: The future of autonomous car
   liability,'' 2013.
 
+\bibitem{giacomin2020}
+J.~Giacomin, ``Human centred design of autonomous vehicles,'' 2020.
+
 \bibitem{eucom2015}
 {Directorate-General for Mobility and Transport (European Commission)},
   ``Employment in the {EU} transport sector,'' 2015.
@@ -157,16 +160,51 @@ S.~N. Duffy and J.~Hopkins, ``Sit, stay, drive: The future of autonomous car
 \bibitem{eea2019}
 {European Environment Agency}, 2019.
 
+\bibitem{sae2018}
+S.~International, {\em Taxonomy and Definitions for Terms Related to Driving
+  Automation Systems for On-Road Motor Vehicles}, jun 2018.
+
+\bibitem{paukert2018}
+C.~Paukert, ``Why the 2019 audi a8 won't get level 3 traffic jam pilot in the
+  us,'' May 2018.
+
+\bibitem{reuters2020}
+``Honda says will be first to mass produce level 3 autonomous cars,'' Nov 2020.
+
+\bibitem{etherington2020}
+D.~Etherington, ``Tesla has increased the price of its 'full self-driving'
+  option to \$10,000,'' Oct 2020.
+
+\bibitem{korosec2015}
+K.~Korosec, ``Elon musk says tesla vehicles will drive themselves in two
+  years,'' Dec 2015.
+
+\bibitem{cuneo2020}
+E.~Cuneo, ``Navigant research recognizes four leaders in the development of
+  automated driving systems,'' Apr 2020.
+
 \bibitem{haeuslschmid2017}
 R.~Häuslschmid, M.~Bülow, B.~Pfleging, and A.~Butz, ``Supporting trust in
   autonomous driving,'' pp.~319--329, 03 2017.
 
 \bibitem{bosch2019}
-N.~Bosch and V.~Baumann, ``Trust in autonomous cars,'' 10 2019.
+V.~B. Natalie~Bosch, ``Trust in autonomous cars,'' 10 2019.
 
 \bibitem{sweet2020}
 M.~Sweet and K.~Laidlaw, ``No longer in the driver’s seat: How do affective
   motivations impact consumer interest in automated vehicles?,'' {\em
   Transportation}, vol.~47, 10 2020.
+
+\bibitem{mckinsey2016}
+F.~N. C. K. F.~M. Martin~Joerss, Jürgen~Schröder, ``Parcel delivery - the
+  future of last mile,'' 2016.
+
+\bibitem{haag2019}
+M.~Haag and W.~Hu, ``1.5 million packages a day: The internet brings chaos to
+  n.y. streets,'' Oct 2019.
+
+\bibitem{mcfarland2020}
+M.~McFarland, ``'i'm not drunk, it's my car:' tesla's 'full self-driving' gets
+  mixed reviews,'' Oct 2020.
 
 \end{thebibliography}

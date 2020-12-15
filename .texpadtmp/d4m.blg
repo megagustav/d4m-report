@@ -11,50 +11,60 @@ Warning--entry type for "fournier1991" isn't style-file defined
 --line 13 of file ../d4mbib.bib
 I was expecting a `,' or a `}'---line 25 of file ../d4mbib.bib
  : 
- : @misc{monkeylearn2019, title={Natural Language Processing (NLP) – What Is NLP and How Does it Work?}, url={https://monkeylearn.com/natural-language-processing/}, journal={MonkeyLearn}}
+ : @misc{cuneo2020, title={Navigant Research recognizes four leaders in the development of automated driving systems}, url={https://web.archive.org/web/20200624181738/https://www.autonomousvehicletech.com/articles/2399-navigant-research-recognizes-four-leaders-in-the-development-of-automated-driving-systems}, journal={Autonomous Vehicle Technology RSS}, publisher={Autonomous Vehicle Technology}, author={Cuneo, Elisabeth}, year={2020}, month={Apr}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 33 of file ../d4mbib.bib
+Warning--entry type for "giacomin2020" isn't style-file defined
+--line 35 of file ../d4mbib.bib
+I was expecting a `,' or a `}'---line 39 of file ../d4mbib.bib
+ : location={Politecnico di Milano}
+ :                                 .
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 71 of file ../d4mbib.bib
+ :     url={https://www.mckinsey.com/~/media/mckinsey/industries/travel%20transport%20and%20logistics/our%20insights/how%20customer%20demands%20are%20reshaping%20last%20mile%20delivery/parcel_delivery_the_future_of_last_mile.ashx}
+ :                                                                                                                                                                                                                                    .
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 86 of file ../d4mbib.bib
  :       url={https://ia800909.us.archive.org/13/items/DeepWorkRulesForFocusedSuccessInADistractedWorldPDFEngbbopdf.com/Deep%20Work%20Rules%20for%20Focused%20Success%20in%20a%20Distracted%20World%20PDF%20engbbopdf.com.pdf}
  :                                                                                                                                                                                                                            .
 I'm skipping whatever remains of this entry
 Warning--entry type for "bosch2019" isn't style-file defined
---line 36 of file ../d4mbib.bib
+--line 89 of file ../d4mbib.bib
 Warning--entry type for "eea2019" isn't style-file defined
---line 66 of file ../d4mbib.bib
-I was expecting a `,' or a `}'---line 69 of file ../d4mbib.bib
+--line 119 of file ../d4mbib.bib
+I was expecting a `,' or a `}'---line 122 of file ../d4mbib.bib
  : url = {https://www.eea.europa.eu/data-and-maps/indicators/transport-emissions-of-greenhouse-gases/transport-emissions-of-greenhouse-gases-12}
  :                                                                                                                                              .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 77 of file ../d4mbib.bib
+I was expecting a `,' or a `}'---line 130 of file ../d4mbib.bib
  : address = {New York}
  :                     .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 147 of file ../d4mbib.bib
+I was expecting a `,' or a `}'---line 200 of file ../d4mbib.bib
  :       url={http://www.cs.cmu.edu/~tom/mlbook.html}
  :                                                   .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 154 of file ../d4mbib.bib
+I was expecting a `,' or a `}'---line 207 of file ../d4mbib.bib
  :       volume=56
  :                ;
 I'm skipping whatever remains of this entry
 Warning--entry type for "giacomin2017" isn't style-file defined
---line 160 of file ../d4mbib.bib
-I was expecting a `,' or a `}'---line 166 of file ../d4mbib.bib
+--line 213 of file ../d4mbib.bib
+I was expecting a `,' or a `}'---line 219 of file ../d4mbib.bib
  :       url={https://bura.brunel.ac.uk/bitstream/2438/15652/1/Fulltext.pdf}
  :                                                                          .
 I'm skipping whatever remains of this entry
 Warning--entry type for "turing1950" isn't style-file defined
---line 187 of file ../d4mbib.bib
-I was expecting a `,' or a `}'---line 194 of file ../d4mbib.bib
+--line 240 of file ../d4mbib.bib
+I was expecting a `,' or a `}'---line 247 of file ../d4mbib.bib
  :       url={https://www.csee.umbc.edu/courses/471/papers/turing.pdf}
  :                                                                    .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 355 of file ../d4mbib.bib
+I was expecting a `,' or a `}'---line 408 of file ../d4mbib.bib
  :       eprint = {https://doi.org/10.1080/00437956.1954.11659520}
  :                                                                .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 384 of file ../d4mbib.bib
+I was expecting a `,' or a `}'---line 437 of file ../d4mbib.bib
  : url={https://link.springer.com/chapter/10.1007/978-3-540-30194-3_12}
  :                                                                     .
 I'm skipping whatever remains of this entry
@@ -68,45 +78,50 @@ Warning--empty journal in diller2008
 Warning--empty booktitle in duffy2013
 Warning--empty booktitle in eucom2015
 Warning--empty booktitle in haeuslschmid2017
-You've used 36 entries,
+Too many commas in name 1 of "Martin Joerss, Jürgen Schröder, Florian Neuhaus, Christoph Klink, Florian Mann" for entry mckinsey2016
+while executing---line 969 of file ieeetr.bst
+Too many commas in name 1 of "Martin Joerss, Jürgen Schröder, Florian Neuhaus, Christoph Klink, Florian Mann" for entry mckinsey2016
+while executing---line 969 of file ieeetr.bst
+Warning--empty journal in mckinsey2016
+You've used 46 entries,
             1876 wiz_defined-function locations,
-            670 strings with 9388 characters,
-and the built_in function-call counts, 7848 in all, are:
-= -- 732
-> -- 276
+            714 strings with 10570 characters,
+and the built_in function-call counts, 9053 in all, are:
+= -- 830
+> -- 313
 < -- 0
-+ -- 109
-- -- 73
-* -- 488
-:= -- 1070
-add.period$ -- 38
-call.type$ -- 36
-change.case$ -- 32
++ -- 128
+- -- 82
+* -- 546
+:= -- 1235
+add.period$ -- 48
+call.type$ -- 46
+change.case$ -- 41
 chr.to.int$ -- 0
-cite$ -- 44
-duplicate$ -- 434
-empty$ -- 848
-format.name$ -- 73
-if$ -- 1967
+cite$ -- 55
+duplicate$ -- 482
+empty$ -- 1024
+format.name$ -- 82
+if$ -- 2269
 int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 29
-newline$ -- 115
-num.names$ -- 37
-pop$ -- 181
+int.to.str$ -- 46
+missing$ -- 30
+newline$ -- 145
+num.names$ -- 46
+pop$ -- 248
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 305
+skip$ -- 341
 stack$ -- 0
 substring$ -- 350
-swap$ -- 152
+swap$ -- 154
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 8
-while$ -- 62
-width$ -- 38
-write$ -- 314
-(There were 12 error messages)
+warning$ -- 9
+while$ -- 71
+width$ -- 48
+write$ -- 383
+(There were 16 error messages)

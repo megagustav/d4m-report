@@ -33,7 +33,9 @@
 \contentsline {section}{\numberline {6.3}Myth: The fun car}{33}{section.6.3}%
 \contentsline {chapter}{\numberline {7}Surveys}{34}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Survey 1: Word Meaning}{34}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Survey 2: Image Association}{36}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Survey Results}{36}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Identifying Patterns}{37}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Conclusion and Next Steps}{37}{section.7.5}%
+\contentsline {subsection}{\numberline {7.1.1}Results}{35}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Conclusion}{36}{subsection.7.1.2}%
+\contentsline {section}{\numberline {7.2}Survey 2: Relevance to Autonomous Vehicles}{36}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Results}{37}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}Identifying Patterns}{37}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Conclusion and Next Steps}{37}{section.7.4}%

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.29)  7 DEC 2020 18:26
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.29)  5 JAN 2021 22:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -762,47 +762,45 @@ Chapter 7.
 File: links/fig16.png Graphic file (type bmp)
 <links/fig16.png>
 
-Overfull \hbox (43.1842pt too wide) in paragraph at lines 849--851
-[]|  [] 
- []
-
-File: links/fig17.png Graphic file (type bmp)
-<links/fig17.png>
-
-Overfull \hbox (43.1842pt too wide) in paragraph at lines 869--871
+Overfull \hbox (43.1842pt too wide) in paragraph at lines 867--869
 []|  [] 
  []
 
 [34
 
-] [35]
-File: links/fig18.png Graphic file (type bmp)
-<links/fig18.png>
+]
+Overfull \hbox (1.23811pt too wide) in paragraph at lines 893--991
+[][] 
+ []
 
-Overfull \hbox (43.1842pt too wide) in paragraph at lines 890--892
+[35]
+File: links/fig17.png Graphic file (type bmp)
+<links/fig17.png>
+
+Overfull \hbox (43.1842pt too wide) in paragraph at lines 1036--1038
 []|  [] 
  []
 
-[36] (/Users/house/Git/d4m-report/.texpadtmp/d4m.bbl [37] [38
+[36] [37] (/Users/house/Git/d4m-report/.texpadtmp/d4m.bbl [38] [39
 
-] [39])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 939.
- [40]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 939.
+] [40])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1111.
+ [41]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1111.
  (/Users/house/Git/d4m-report/.texpadtmp/d4m.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 939.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 939.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1111.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1111.
 Package rerunfilecheck Info: File `d4m.out' has not changed.
-(rerunfilecheck)             Checksum: 8010398F3ABDE19CB96E9CADF0179A2D;2674.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 939.
+(rerunfilecheck)             Checksum: 90661F02632232E4DE4FE56C6A5C64F7;2817.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1111.
  ) 
 Here is how much of TeX's memory you used:
- 16495 strings out of 479418
- 302031 string characters out of 5884584
- 639993 words of memory out of 5000000
- 33760 multiletter control sequences out of 15000+600000
+ 16491 strings out of 479418
+ 301974 string characters out of 5884584
+ 640155 words of memory out of 5000000
+ 33757 multiletter control sequences out of 15000+600000
  540743 words of font info for 63 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 47i,13n,72p,944b,717s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,13n,72p,944b,725s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/house/Git/d4m-report/.texpadtmp/d4m.pdf (41 pages).
+Output written on /Users/house/Git/d4m-report/.texpadtmp/d4m.pdf (42 pages).

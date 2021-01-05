@@ -25,3 +25,5 @@ texpadtmp/
 .texpadtmp/d4m.out
 .texpadtmp/d4m.synctex.gz
 .texpadtmp/d4m.toc
+.texpadtmp/d4m.synctex.gz
+.texpadtmp/d4m.log
